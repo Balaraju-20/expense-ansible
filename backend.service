@@ -1,0 +1,11 @@
+[Unit]
+Description = Backend Service
+
+[Service]
+User=expense
+Environment=DB_HOST="mysql.mydawsweb.online"
+ExecStart=/bin/mode /app/index.js
+SyslogIdentifier=Backend
+
+[Install]
+WantedBy=multi-user.target
