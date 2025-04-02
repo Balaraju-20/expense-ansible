@@ -23,7 +23,7 @@
       state: present
     loop: 
     - nodejs
-    - MySQL
+    - mysql
 
   - name: create expense user
     ansible.builtin.user: 
